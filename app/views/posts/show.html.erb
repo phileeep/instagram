@@ -1,0 +1,11 @@
+<div class="posts-wrapper d-flex justify-content-center">
+  <div class="post">
+    <%= image_tag(url_for(@post.image), class: "post-picture") %>
+    <%= @post.caption %>
+    <br>
+      <%= link_to "Edit Post", edit_post_path(@post)%>
+    <br>
+    <br>
+    <%= link_to "Go Back", "/"%>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+<%= form_with model: @post do |form| %>
+  <div class="mb-3 pt-5">
+    <%= form.file_field :image, :class => "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.text_field :caption, :placeholder => "Give a caption", :class => "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.submit "Submit", :class => "form-control" %>
+  </div>
+<% end %>

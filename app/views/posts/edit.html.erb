@@ -1,0 +1,9 @@
+<div class="edit">
+<h2> Edit Post</h2>
+<%= render "form" %>
+<%= link_to "Delete Post", post_path(@post), method: :delete%>
+<h3 class="pt-5">Preview:</h3>
+    <%= image_tag(url_for(@post.image), class: "edit-picture") %>
+    <br>
+      <p class="caption"><%= @post.caption %></p>
+ </div>

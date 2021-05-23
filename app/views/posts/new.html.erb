@@ -1,6 +1,1 @@
-<div class="new-post">
-<%= form_with model: @post do |form| %>
-  <%= form.file_field :image %>
-  <%= form.text_field :caption, :placeholder => "Give a caption" %>
-   <%= form.submit "Submit" %>
-<% end %>
+<%= render "form" %>
