@@ -1,1 +1,11 @@
+
 <h1>Vintgram</h1>
+
+<%= @posts.each do |post|%>
+  <div class="posts-wrapper d-flex justify-content-center">
+  <div class="post">
+  <%= image_tag(url_for(post.image), class: "post-picture") %>
+  <p class="caption"><%= post.caption %></p>
+  </div>
+  </div>
+<% end %>
